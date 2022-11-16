@@ -1,3 +1,7 @@
+const buttonPaper = document.getElementById('button-paper').addEventListener('click', function(){ buttonClicked('paper'); }),
+  buttonRock = document.getElementById('button-rock').addEventListener('click', function(){ buttonClicked('rock'); }),
+  buttonScissors = document.getElementById('button-scissors').addEventListener('click', function(){ buttonClicked('scissors'); });
+
 let computerMove,
   playerMove,
   randomNumber,
@@ -45,11 +49,3 @@ computerMove = getMoveName(randomNumber);
 console.log('ruch komputera to: ' + computerMove);
 displayResult(playerMove, computerMove);
 }
-
-const buttonPaper = document.getElementById('button-paper'),
-  buttonRock = document.getElementById('button-rock'),
-  buttonScissors = document.getElementById('button-scissors');
-
-buttonRock.addEventListener('click', function(){ buttonClicked('rock'); });
-buttonPaper.addEventListener('click', function(){ buttonClicked('paper'); });
-buttonScissors.addEventListener('click', function(){ buttonClicked('scissors'); });
